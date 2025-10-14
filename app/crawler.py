@@ -1,11 +1,3 @@
-# app/crawler.py
-"""
-Polite crawler:
-- stays within domain
-- respects robots.txt
-- extracts main text
-- saves crawl results to data/pages/
-"""
 
 import os
 import json
