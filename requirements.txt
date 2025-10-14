@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+transformers==4.29.2
+torch
+faiss-cpu
+numpy
+scikit-learn

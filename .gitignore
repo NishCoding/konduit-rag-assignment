@@ -1,0 +1,11 @@
+# Virtual Environment
+venv/
+.idea/
+*.pyc
+
+# Data & Index Files (DO NOT commit large models or generated index)
+data/index/
+data/pages/
+__pycache__/
+*.npy
+*.bin
