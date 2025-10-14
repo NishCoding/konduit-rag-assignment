@@ -1,7 +1,4 @@
-# evals/eval_script.py
-"""
-Evaluate recall@k and latency.
-"""
+
 
 import time
 from app.qa_system import ask
