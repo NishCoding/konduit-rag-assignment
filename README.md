@@ -94,16 +94,14 @@ Type: RAG / Offline Q&A Project
 
 ## 🧾 Example CLI Outputs (Screenshots)
 
-Below are sample outputs from the demo run:
+### 1️⃣ Crawl Output
+![Crawl Output](./screenshots/crawl_output.png)
 
-**1️⃣ Crawl Output**
-![Crawl Output](screenshots/crawl_output.png)
+### 2️⃣ Index Output
+![Index Output](./screenshots/index_output.png)
 
-**2️⃣ Index Output**
-![Index Output](screenshots/index_output.png)
+### 3️⃣ Ask (Answerable)
+![Ask Answerable](./screenshots/ask_answerable.png)
 
-**3️⃣ Ask (Answerable)**
-![Ask Answerable](screenshots/ask_answerable.png)
-
-**4️⃣ Ask (Unanswerable)**
-![Ask Unanswerable](screenshots/ask_unanswerable.png)
+### 4️⃣ Ask (Unanswerable)
+![Ask Unanswerable](./screenshots/ask_unanswerable.png)
