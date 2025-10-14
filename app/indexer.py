@@ -1,10 +1,3 @@
-# app/indexer.py
-"""
-Offline Indexer:
-- chunk text (700 chars / 150 overlap)
-- compute TF-IDF embeddings (offline, no model download)
-- store FAISS index + metadata
-"""
 
 import os
 import json
@@ -30,7 +23,6 @@ def build_index(pages_file):
             corpus.append(chunk)
             meta.append({"url": url, "chunk_id": i, "text": chunk})
 
-    # TF-IDF embedding (offline)
     print("[indexer] Computing TF-IDF embeddings...")
     vectorizer = TfidfVectorizer(max_features=5000)
     embeddings = vectorizer.fit_transform(corpus).toarray().astype(np.float32)
