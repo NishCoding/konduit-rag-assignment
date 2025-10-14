@@ -1,7 +1,3 @@
-# app/utils.py
-"""
-Utility functions for URL normalization, HTML cleaning, and domain filtering.
-"""
 
 import re
 from bs4 import BeautifulSoup
@@ -9,7 +5,6 @@ from urllib.parse import urlparse, urljoin
 
 
 def clean_html(html: str) -> str:
-    """Remove scripts, styles, and return cleaned visible text."""
     soup = BeautifulSoup(html, "html.parser")
     for s in soup(["script", "style", "noscript"]):
         s.decompose()
@@ -19,14 +14,12 @@ def clean_html(html: str) -> str:
 
 
 def in_same_domain(base_url: str, target_url: str) -> bool:
-    """Check if target_url is within the same domain as base_url."""
     base = urlparse(base_url).netloc
     target = urlparse(target_url).netloc
     return target.endswith(base)
 
 
 def normalize_url(base_url: str, link: str) -> str:
-    """Resolve relative links and remove URL fragments."""
     absolute = urljoin(base_url, link)
     parsed = urlparse(absolute)
     return parsed._replace(fragment="").geturl()
